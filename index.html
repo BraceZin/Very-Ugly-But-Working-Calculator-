@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Oxygen&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/modal.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <div id = "calc">
+  <div class = "calculator-grid">
+    <div id="display">&nbsp;</div>
+    <div id="numbers" class="input-container">
+      <button onclick="appendExpr('0')" class="btn">0</button>
+      <button onclick="appendExpr('1')" class="btn">1</button>
+      <button onclick="appendExpr('2')" class="btn">2</button>
+      <button onclick="appendExpr('3')" class="btn">3</button>
+      <button onclick="appendExpr('4')" class="btn">4</button>
+      <button onclick="appendExpr('5')" class="btn">5</button>
+      <button onclick="appendExpr('6')" class="btn">6</button>
+      <button onclick="appendExpr('7')" class="btn">7</button>
+      <button onclick="appendExpr('8')" class="btn">8</button>
+      <button onclick="appendExpr('9')" class="btn">9</button>
+    </div>
+    <div id="operators" class="input-container">
+      <button onclick="appendExpr('+')" class="btn">+</button>
+      <button onclick="appendExpr('-')" class="btn">-</button>
+      <button onclick="appendExpr('*')" class="btn">&times;</button>
+      <button onclick="appendExpr('/')" class="btn">/</button>
+      <button onclick="appendExpr('^')" class="btn">^</button>
+      <button onclick="appendExpr('(')" class="btn">(</button>
+      <button onclick="appendExpr(')')" class="btn">)</button>
+    </div>
+    <div id="functions" class="input-container">
+      <button onclick="calc()" class="span two">=</button>
+      <button onclick="clr()" data-all-clear class="span two">AC</button>
+      <button onclick="del()" class="span two">Del</button>
+    </div>
+  </div>
+     <button class="trigger">How to use?</button>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>In simple words, use this calculator like any other calculator. You may also type in equations too! The ^ symbol means exponents as in 5^2 is the same as 5 to the power of 2 (which is 25). If you have a hard time keeping in track with all the symbols, check out the cheatsheet!</h1>
+        </div>
+    </div>
+    </div>
+    <script src="./js/calculate.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
